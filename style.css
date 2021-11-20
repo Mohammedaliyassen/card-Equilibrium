@@ -1,0 +1,105 @@
+body{
+    background: #0d1a2d;
+    display: grid;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif , 'Bitter', serif ;
+    font-size: 18px;
+}
+section{
+    width: 400px;
+    background: #0c192c;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 30px;  
+}
+
+.contant {
+    width: 300px;
+    background: #15273f;
+    padding: 20px;
+    color: #889dbc;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 10px 10px 15px #0c1729;
+    font-weight: lighter;
+}
+.contant h1 {
+    color: white;
+}
+.contant h1:hover {
+    color: #00f6f5;
+    transition: .5s;
+}
+.contant img {
+    border-radius: 7px;
+}
+.contant p {
+    display: inline-block;
+}
+.createdBy{
+    border-top: 1px solid  hsl(215, 32%, 27%);
+}
+.user {
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    
+}
+.user:hover {
+    outline: 1px white solid;
+    border-radius: 50%;
+
+}
+
+.clock{
+    margin-left: 85px;
+}
+.name{
+    color: white;
+}
+.name:hover{
+    color: #00f6f5;
+    transition: .5s;
+}
+.eye{
+    position: absolute;
+    background: #00f6f679;
+    width: 299px;
+    height: 299px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 71px;
+    border-radius: 7px;
+    visibility: hidden;
+    
+}
+.big:hover .eye{
+    visibility: visible;
+    transition: 1s;
+}
+.view{
+    cursor: pointer;
+}
+@media(max-width:360px){
+    body{
+        justify-content: left;
+        transform: translateX(0px);
+    }
+    section{
+        width: 300px;
+        background: #0c192c;
+        padding: 0px;
+        padding-bottom: 30px;
+        text-align: center;
+        margin-top: 5%;
+        border-radius: 30px;
+    }
+    .eye{
+        top: 63px;
+    }
+}
